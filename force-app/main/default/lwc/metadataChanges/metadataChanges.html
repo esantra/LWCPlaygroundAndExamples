@@ -1,0 +1,44 @@
+<template>
+  <lightning-card title="View Org Changes" icon-name="standard:product">
+    <h1>Please ignore the UI as it is not completed at this time</h1>
+    <!-- date functionality to be added next iteration
+      >The last modified date is: {dvalue}</p>
+    <div>
+      <h2>Please input the starting date.</h2>
+      <lightning-input
+        type="date"
+        name="input3"
+        label="Date field with ISO8601 formatted value"
+        value={dvalue}
+        onchange={handleChange}
+      ></lightning-input>
+    </div-->
+
+    <div style="height: 20%;">
+      <h1 class="titleClass">Apex Classes</h1>
+      <lightning-datatable key-field="id" data={recordslist} columns={columns}>
+      </lightning-datatable>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div style="height: 20%;">
+      <h1 class="titleClass">Apex Triggers</h1>
+      <lightning-datatable key-field="id" data={triggerList} columns={columns}>
+      </lightning-datatable>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- uncomment to display lightning components
+      div style="height: 300px;">
+      <h1>Lightning Components</h1>
+      <lightning-datatable
+        key-field="id"
+        data={lightningComponentsList}
+        columns={lccolumns}
+      >
+      </lightning-datatable>
+    </div-->
+  </lightning-card>
+</template>
