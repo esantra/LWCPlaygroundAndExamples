@@ -9,3 +9,6 @@ From Child to Parent(s)
 From Parent to Child
 1. The @api decorator in the child component exposes a property, making it public, so that the parent component can update it.
 2. The @api decorator in the child component exposes a function, making it public, so that the parent component can call it.
+
+From unrelated Component to unrelated Component
+1. Create a message channel
